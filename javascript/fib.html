@@ -1,0 +1,10 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Fibonacci Series</h1>
+        <input type="number" id="num" placeholder="Enter number of terms">
+        <button onclick="generateFibonacci()">Generate</button> <p id="result"></p> <script> function generateFibonacci() { let num = document.getElementById("num").value; let a = 0, b = 1, count = 0, fibSeries = ""; if (num <= 0) { document.getElementById("result").innerText = "Please enter a positive integer"; } else if (num == 1) { fibSeries = "0"; } else { while (count < num) { fibSeries += a + " "; let nth = a + b; a = b; b = nth; count++; } document.getElementById("result").innerText = fibSeries; }
+    </body>
+</html>
